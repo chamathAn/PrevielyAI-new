@@ -11,6 +11,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
+
 app.use(
   cors({
     origin: "https://previely-ai-new.vercel.app",
