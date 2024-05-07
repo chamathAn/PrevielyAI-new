@@ -4,9 +4,9 @@ const checkAdmin = require("../middlewares/checkAdmin");
 
 const route = require("express").Router();
 
-route.post("/postjob",authonticateToken, checkAdmin, adminJobPost);
-route.post("/alljobs", authonticateToken, checkAdmin, adminGetAllJobs);
-route.post("/allapplications", authonticateToken, checkAdmin, adminGetAllApplications);
-route.post("/job/application/:id", authonticateToken, checkAdmin, adminGetJobApllication);
+route.post("/postjob",authonticateToken,  adminJobPost);
+route.post("/alljobs", authonticateToken, adminGetAllJobs);
+route.post("/allapplications", authonticateToken,  adminGetAllApplications);
+route.post("/job/application/:id", authonticateToken,  adminGetJobApllication);
 
 module.exports = route;
