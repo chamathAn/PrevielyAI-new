@@ -4,9 +4,9 @@ const checkAdmin = require("../middlewares/checkAdmin");
 
 const route = require("express").Router();
 
-route.post("/postjob", checkAdmin, adminJobPost);
-route.post("/alljobs",  checkAdmin, adminGetAllJobs);
-route.post("/allapplications",  checkAdmin, adminGetAllApplications);
-route.post("/job/application/:id",  checkAdmin, adminGetJobApllication);
+route.post("/postjob",  adminJobPost);
+route.post("/alljobs",   adminGetAllJobs);
+route.post("/allapplications",   adminGetAllApplications);
+route.post("/job/application/:id",   adminGetJobApllication);
 
 module.exports = route;
