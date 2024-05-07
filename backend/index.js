@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: "previely-ai-new.vercel.app",
+    origin: "https://previely-ai-new.vercel.app",
     credentials: true,
   })
 );
